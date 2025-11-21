@@ -6,10 +6,10 @@
   <title>FinalWork</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header upper-case">
     <img class="header-logo" src="./sources/svg/noemi-logo.svg" alt="">
     <nav class="header-menu">
-      <ul class="header-menu-list">
+      <ul class="header-menu-list ">
         <li class="header-menu-item"><a class="header-menu-item" href="#">ГЛАВНАЯ</a></li>
         <li class="header-menu-item"><a class="header-menu-item" href="#">ПОСТЫ</a></li>
         <li class="header-menu-item"><a class="header-menu-item" href="#">СТАТЬИ</a></li>
@@ -21,41 +21,42 @@
     <h1 class="header-title">БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ, И ОБРАЗЕ ЖИЗНИ</h1>
   </header>
   <main class="main">
-    <div class="trend">
+    <section class="trend upper-case ">
       <h2 class="trend-title">СЕЙЧАС В ТРЕНДЕ</h2>
-      <section class="trend-articles">
+      <div class="trend-articles">
         <article class="trend-article">
           <img src="./sources/img/trend1.jpg" alt="" class="article-img">
           <div class="trend-text">
             <div class="trend-tags">
               <a href="#" class="trend-tag">LIFESTYLE</a>
-              <a href="#"  class="trend-tag">INTERIOR</a>
+              <a href="#" class="trend-tag">INTERIOR</a>
             </div>
-            <a href="#" class="trend-art-title">СЕЙЧАС В ТРЕНДЕ: САД НА ПОДОКОННИКЕ</a>
+            <a href="#" class="trend-art-title">СЕЙЧАС В ТРЕНДЕ: САД
+              <br>НА ПОДОКОННИКЕ</a>
           </div>
         </article>
         <article class="trend-article">
           <img src="./sources/img/trend2.jpg" alt="" class="article-img">
             <div class="trend-text">
               <div class="trend-tags">
-                <a href="#"  class="trend-tag">FOOD</a>
+                <a href="#" class="trend-tag">FOOD</a>
               </div>
-              <a href="#"  class="trend-art-title">СЫРЫ НА КРАСИВЫХ КАРТИНКАХ ИЗ ИНТЕРНЕТА: КАКИЕ ОНИ НА ВКУС?</a>
+              <a href="#" class="trend-art-title">СЫРЫ НА КРАСИВЫХ КАРТИНКАХ ИЗ ИНТЕРНЕТА: КАКИЕ ОНИ НА ВКУС?</a>
             </div>
         </article>
         <article class="trend-article">
           <img src="./sources/img/trend3.jpg" alt="" class="article-img">
-          <div class="trend-text">
+          <div class="trend-text trend-text-r">
             <div class="trend-tags">
               <a href="#" class="trend-tag">LIFESTYLE</a>
               <a href="#" class="trend-tag">TRAVEL</a>
             </div>
-            <a href="#"  class="trend-art-title">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
+            <a href="#" class="trend-art-title">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
           </div>
         </article>
         <article class="trend-article">
           <img src="./sources/img/trend4.jpg" alt="" class="article-img">
-          <div class="trend-text">
+          <div class="trend-text trend-text-r">
             <div class="trend-tags">
               <a href="#" class="trend-tag">FOOD</a>
               <a href="#" class="trend-tag">HEALTH</a>
@@ -63,9 +64,129 @@
             <a href="#" class="trend-art-title">СЕЙЧАС В ТРЕНДЕ: СКОЛЬКО ВИТАМИНА C В ЛИМОНАХ?</a>
           </div>
         </article>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="posts">
+      <article class="post">
+        <img src="./sources/img/last-post1.jpg" alt="" class="post-img">
+        <div class="post-frame">
+          <ul class="post-category upper-case">
+            <li class="trend-tag"><a href="#" class="trend-tag">TRAVEL</a></li>
+            <li class="trend-tag"><a href="#" class="trend-tag">HEALTH</a></li>
+          </ul>
+          <a href="#" class="post-title upper-case">10 мест, ради которых стоит проснуться на рассвете</a>
+          <div class="post-data-author">
+            <p class="post-data">10 июня 2019</p>
+            <p class="post-author">Неизвестный автор</p>
+          </div>
+          <p class="post-text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</p>
+        </div>
+      </article>
+      <article class="post">
+        <img src="./sources/img/last-post2.jpg" alt="" class="post-img">
+        <div class="post-frame">
+          <ul class="post-category upper-case">
+            <li class="trend-tag"><a href="#" class="trend-tag">HEALTH</a></li>
+            <li class="trend-tag"><a href="#" class="trend-tag">LIFESTYLE</a></li>
+          </ul>
+          <a href="#" class="post-title upper-case">ЙОга для начинающих в домашних условиях</a>
+          <div class="post-data-author">
+            <p class="post-data">10 июня 2019</p>
+            <p class="post-author">Неизвестный автор</p>
+          </div>
+          <p class="post-text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+        </div>
+      </article>
+      <article class="post">
+        <img src="./sources/img/last-post3.jpg" alt="" class="post-img">
+        <div class="post-frame">
+          <ul class="post-category upper-case">
+            <li class="trend-tag"><a href="#" class="trend-tag">MUSIC</a></li>
+          </ul>
+          <a href="#" class="post-title upper-case">Лучшие музыкальные фестивали этого лета</a>
+          <div class="post-data-author">
+            <p class="post-data">10 июня 2019</p>
+            <p class="post-author">Неизвестный автор</p>
+          </div>
+          <p class="post-text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
+          <p class="post-text">Мы составили список лучших летних фестивалей по всему миру.</p>
+        </div>
+      </article>
+      <article class="post">
+        <img src="./sources/img/last-post4.jpg" alt="" class="post-img">
+        <div class="post-frame">
+          <ul class="post-category upper-case">
+            <li class="trend-tag"><a href="#" class="trend-tag">LIFESTYLE</a></li>
+            <li class="trend-tag"><a href="#" class="trend-tag">FOOD</a></li>
+          </ul>
+          <a href="#" class="post-title upper-case">Наукоёмкий подход к кулинарии</a>
+          <div class="post-data-author">
+            <p class="post-data">10 июня 2019</p>
+            <p class="post-author">Неизвестный автор</p>
+          </div>
+          <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+        </div>
+      </article>
+      <article class="post">
+        <img src="./sources/img/last-post5.jpg" alt="" class="post-img">
+        <div class="post-frame">
+          <ul class="post-category upper-case">
+            <li class="trend-tag"><a href="#" class="trend-tag">LIFESTYLE</a></li>
+            <li class="trend-tag"><a href="#" class="trend-tag">INTERIOR</a></li>
+            <li class="trend-tag"><a href="#" class="trend-tag">ART</a></li>
+          </ul>
+          <a href="#" class="post-title upper-case">Делаем модные принты на подушках для интерьера </a>
+          <div class="post-data-author">
+            <p class="post-data">10 июня 2019</p>
+            <p class="post-author">Неизвестный автор</p>
+          </div>
+          <p class="post-text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
+        </div>
+      </article>
+    </section>
+    <section class="shop">
+      <h2 class="shop-title upper-case">НАШИ ИЗДЕЛИЯ</h2>
+      <div class="shop-articles">
+        <article class="shop-article">
+          <img src="./sources/img/shop-item-desk1.jpg" alt="" class="shop-img">
+          <div class="shop-text-block">
+            <h3 class="shop-art-title upper-case">ПОДУШКИ НА ДИВАН</h3>
+            <p class="shop-text">Набор из двух подушек с модными принтами. Видео о создании
+            <a href="#" class="shop-link">здесь.</a></p>
+            <div class="shop-price-old">1000 ₽</div>
+            <div class="shop-price-cur">800 ₽</div>
+            <button class="shop-button upper-case">В магазин</button>
+          </div>
+        </article>
+        <article class="shop-article">
+          <img src="./sources/img/shop-item-desk2.jpg" alt="" class="shop-img">
+          <div class="shop-text-block">
+            <h3 class="shop-art-title upper-case">Кукла «Зайчик»</h3>
+            <p class="shop-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="shop-link">весенняя серия постов</a> в блоге и несколько подкастов.
+            </p>
+            <div class="shop-price-old"></div>
+            <div class="shop-price-cur">3500 ₽</div>
+            <button class="shop-button upper-case">В магазин</button>
+          </div>
+        </article>
+        <article class="shop-article">
+          <img src="./sources/img/shop-item-desk3.jpg" alt="" class="shop-img">
+          <div class="shop-text-block">
+            <h3 class="shop-art-title upper-case">Шестиугольная рамкаН</h3>
+            <p class="shop-text">Необычная рамка для украшения дома из видео <a href="#" class="shop-link">«Как сделать рамку из подручных средств за 30 минут»
+            </a></p>
+            <div class="shop-price-old">1000 ₽</div>
+            <div class="shop-price-cur">800 ₽</div>
+            <button class="shop-button upper-case">В магазин</button>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+
+  </footer>
 </body>
 </html>
