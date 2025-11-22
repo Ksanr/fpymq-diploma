@@ -496,6 +496,8 @@ ul {
 }
 
 .find {
+  padding: 0;
+  margin: 0;
   display: flex;
   position: relative;
   left: 4px;
@@ -545,7 +547,7 @@ ul {
   border: none;
   background-color: #f4f7f6;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .ss-field:focus {
@@ -570,4 +572,34 @@ ul {
 .find-btn:hover, .ss-btn:hover {
   background-color: #323232;
   cursor: pointer;
+}
+
+.tags {
+  position: relative;
+  top: -14px;
+  left: 1px;
+}
+
+.list-tags {
+  position: relative;
+  top: -6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  border: 3px solid #eeeeee;
+  padding: 5px 13px 4px;
+}
+
+.tag-link{
+  color: #0f0d0e;
+}
+
+.tag:hover {
+  border: 3px solid #b59f5b;
 }
