@@ -340,3 +340,25 @@ ul {
   margin: 0;
 }
 
+.shop-button {
+  display: block;
+  width: 140px;
+  height: 48px;
+  background-color: #b59f5b;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  top: -44px;
+  left: 161px;
+}
+
+.shop-button:hover {
+  background-color: #323232;
+  cursor: pointer;
+}
+
+.shop-button:active {
+  transform: translateY(2px);
+}
