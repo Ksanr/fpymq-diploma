@@ -280,6 +280,11 @@ ul {
   width: 347px;
 }
 
+.shop-article:nth-child(2) {
+  position: relative;
+  left: 2px;
+}
+
 .shop-img {
   width: 300px;
   height: 205px;
@@ -361,4 +366,33 @@ ul {
 
 .shop-button:active {
   transform: translateY(2px);
+}
+
+.footer {
+  margin: 57px auto 0;
+  position: relative;
+  left: 7px;
+  width: 225px;
+  color: #999999;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.socials {
+  display: flex;
+  gap: 27px;
+  margin-bottom: 100px;
+}
+
+.social {
+  width: 20px;
+}
+
+.social:nth-child(1) {
+  width: 25px;
+}
+
+.copyrights {
+  position: relative;
+  left: 3px;
 }
