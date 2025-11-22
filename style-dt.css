@@ -377,23 +377,34 @@ ul {
 }
 
 .footer {
-  margin: 57px auto 0;
-  position: relative;
-  left: 7px;
-  width: 225px;
+  margin: 25px auto 0;
+  width: 1170px;
   color: #999999;
   font-weight: 700;
   font-size: 12px;
+  text-align: center;
 }
 
 .socials {
+  width: 100%;
+  height: 82px;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.soc-labels {
   display: flex;
   gap: 27px;
-  margin-bottom: 100px;
+  left: 6px;
+  position: relative;
+  width: 225px;
 }
 
 .social {
-  width: 20px;
+  width: 21px;
 }
 
 .social:nth-child(1) {
@@ -402,7 +413,7 @@ ul {
 
 .copyrights {
   position: relative;
-  left: 3px;
+  left: 6px;
 }
 
 .sidebar {
