@@ -411,19 +411,29 @@ ul {
   padding: 0;
   margin: 0;
   position: relative;
+
+  top: -17px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.sidebar-posts {
+  position: relative;
   left: 4px;
-  top: -16px;
 }
 
 .sb-posts {
   position: relative;
-  left: -2px;
+  left: -3px;
+  top: 1px;
 }
 
 .sidebar-title {
   font-weight: 700;
   font-size: 14px;
   text-align: center;
+  color: #0f0d0e;
 }
 
 .sidebar-title::after {
@@ -432,7 +442,7 @@ ul {
   width: 66px;
   height: 2px;
   background: #b59f5b;
-  margin: 9px auto 28px auto;
+  margin: 9px auto 29px auto;
 }
 
 .sb-posts{
@@ -472,4 +482,81 @@ ul {
   color: inherit;
   padding: 0;
   margin: 0;
+}
+
+.find {
+  display: flex;
+  position: relative;
+  left: 4px;
+}
+
+.find-field {
+  width: 220px;
+  height: 48px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f4f7f6;
+  font-size: 13px;
+}
+
+.find-field:focus {
+  border: 1px solid #b59f5b;
+  padding-left: 14px;
+  outline: none;
+}
+
+.find-btn {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: #b59f5b;
+  background-image: url("./sources/svg/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+}
+
+.sidebar .subscribe {
+  position: relative;
+  top: -12px;
+  left: -2px;
+}
+
+.ss-field {
+  position: relative;
+  top: -8px;
+  left: 3px;
+  width: 268px;
+  height: 48px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ss-field:focus {
+  border: 1px solid #b59f5b;
+  padding-left: 19px;
+  outline: none;
+}
+
+.ss-btn {
+  position: relative;
+  top: 11px;
+  left: 3px;
+  width: 268px;
+  height: 48px;
+  border: 0;
+  background-color: #b59f5b;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.find-btn:hover, .ss-btn:hover {
+  background-color: #323232;
+  cursor: pointer;
 }
