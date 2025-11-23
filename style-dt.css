@@ -576,7 +576,7 @@ ul {
 
 .tags {
   position: relative;
-  top: -14px;
+  top: -15px;
   left: 1px;
 }
 
@@ -586,6 +586,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+  padding: 0;
 }
 
 .tag {
@@ -602,4 +603,41 @@ ul {
 
 .tag:hover {
   border: 3px solid #b59f5b;
+}
+
+.categories {
+  position: relative;
+  top: -52px;
+  left: 2px;
+}
+
+.list-themes{
+  position: relative;
+  top: -20px;
+  left: -40px;
+}
+
+.theme {
+  display: block;
+  width: 271px;
+  height: 47px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.theme-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  display: inline;
+}
+
+.theme-count {
+  font-size: 12px;
+  font-weight: 700;
+  color: #b59f5b;
+  display: inline;
+  vertical-align: super;
 }
