@@ -641,3 +641,247 @@ ul {
   display: inline;
   vertical-align: super;
 }
+
+.popup-toggle {
+  display: none;
+}
+
+.open-popup:hover {
+  cursor: pointer;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.popup-content {
+  position: fixed;
+  top: 63.5%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: white;
+  padding: 30px 30px 30px 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 3;
+  max-width: 330px;
+  width: 90%;
+  height: 530px;
+  overflow-y: auto;
+}
+
+/* Кнопка закрытия в виде креста */
+.popup__close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  font-size: 20px;
+
+  position: absolute;
+  top: 10px; /* после того, как будет отображаться за пределами сделать с "-" и белым */
+  right: 10px; /* сделать 0 */
+}
+
+/* пока не получается сделать видимым вынесенный крест закрытия */
+.popup__close:before,
+.popup__close:after {
+  content: "";
+  background-color: black; /* для отладки, должен быть white */
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.4em;
+  height: 0.2em;
+}
+
+.popup__close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup__close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Показываем popup при активации чекбокса */
+.popup-toggle:checked ~ .popup-overlay,
+.popup-toggle:checked ~ .popup-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-toggle:checked ~ .popup-content {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Затемняем основной контент */
+.popup-toggle:checked ~ main {
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.popup-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: -2px;
+  left: 3px;
+}
+
+.popup-title::after {
+  content: '';
+  display: block;
+  width: 66px;
+  height: 2px;
+  background: #b59f5b;
+  margin: 9px auto 22px auto;
+}
+
+.fb_label {
+  display: block;
+  width: 95%;
+  position: relative;
+  left: 1px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.select {
+  position: relative;
+  left: 1px;
+  top: 10px;
+  width: 330px;
+  height: 48px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 13.5px;
+  border: none;
+  background-color: #f4f7f6;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background-image: url("./sources/svg/form-arrows.svg");
+  background-size: 9px 18px;
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.select:focus {
+  border: 1px solid #b59f5b;
+  padding-left: 19px;
+}
+
+.fb__email {
+  padding-top: 39px;
+}
+
+.radio-group {
+  padding-top: 4px;
+  padding-left: 3px;
+}
+
+
+.radio-group-text {
+  font-size: 13.5px;
+}
+
+.radio-group-text::before {
+  content: "";
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("./sources/svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center  center;
+  background-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.radio-group {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.radio-group:nth-of-type(n+2) {
+  margin-left: 9px;
+}
+
+.radio:checked ~ .radio-group-text::before {
+  background-image: url("./sources/svg/form-circle.svg");
+}
+
+.radio {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+/*.radio:focus ~ .radio-group-text::before {
+	outline: 2px solid red;
+}*/
+
+.fb-group {
+  position: relative;
+  top: 29px;
+}
+
+.fb_textarea {
+  resize: none;
+  min-width: 330px;
+  max-width: 330px;
+  min-height: 135px;
+  max-height: 135px;
+  background-color: #f4f7f6;
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 13px;
+  box-sizing: border-box;
+  padding-top: 23px;
+  padding-left: 23px;
+}
+
+.fb_textarea:focus {
+  border: 1px solid #b59f5b;
+  padding-left: 22px;
+  outline: none;
+}
+
+.button {
+  position: relative;
+  top: 55px;
+  left: 3px;
+  display: block;
+  width: 328px;
+  height: 48px;
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-color: #b59f5b;
+}
+
+.button:hover {
+  background-color: #323232;
+  cursor: pointer;
+}
