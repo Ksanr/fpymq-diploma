@@ -1,8 +1,8 @@
 /* Объявление для обычного начертания */
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Regular.woff2') format('woff2'),
-       url('./fonts/OpenSans-Regular.woff') format('woff');
+  src: url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+       url('/fonts/OpenSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 /* Объявление для жирного начертания */
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
-       url('./fonts/OpenSans-Bold.woff') format('woff');
+  src: url('/fonts/OpenSans-Bold.woff2') format('woff2'),
+       url('/fonts/OpenSans-Bold.woff') format('woff');
   font-weight: 700; /* bold */
   font-style: normal;
   font-display: swap;
@@ -44,7 +44,7 @@ ul {
 
   justify-content: space-between;
   background-color: rgb(21, 35, 50);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./sources/img/banner-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/sources/img/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -310,7 +310,7 @@ ul {
   border: 3px solid rgba(181, 159, 91, 0.6);
   color: #0f0d0e;
   width: 346px;
-  min-height: 267px;
+  height: 267px;
   box-sizing: border-box;
 }
 
