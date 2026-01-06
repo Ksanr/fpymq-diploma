@@ -99,10 +99,6 @@ ul {
   right: 37px;
 }
 
-.menu-toggle {
-  display: none;
-}
-
 /* Стили иконки гамбургера */
 .menu-btn {
   width: 23px;
@@ -618,6 +614,7 @@ ul {
   padding: 0;
   font-size: 12px;
   opacity: 0.54;
+  width: 100%;
 }
 
 .sp-post-title {
