@@ -702,7 +702,7 @@ ul {
   max-width: 330px;
   width: 90%;
   height: 530px;
-  overflow-y: auto;
+  //overflow-y: auto;
 }
 
 /* Кнопка закрытия в виде креста */
@@ -711,20 +711,20 @@ ul {
   border: none;
   padding: 0;
   cursor: pointer;
-  width: 15px;
-  height: 15px;
-  font-size: 20px;
+  width: 10px;
+  height: 10px;
+  font-size: 15px;
 
   position: absolute;
-  top: 10px; /* после того, как будет отображаться за пределами сделать с "-" и белым */
-  right: 10px; /* сделать 0 */
+  top: -23px; /* после того, как будет отображаться за пределами сделать с "-" и белым */
+  right: 2px;
 }
 
 /* пока не получается сделать видимым вынесенный крест закрытия */
 .popup__close:before,
 .popup__close:after {
   content: "";
-  background-color: black; /* для отладки, должен быть white */
+  background-color: white;
   border-radius: 5px;
   position: absolute;
   top: 50%;
