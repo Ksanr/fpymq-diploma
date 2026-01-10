@@ -860,7 +860,7 @@ button, input, select, textarea {
   resize: none;
   max-width: 289px;
   width: 90%;
-  max-height: 91px;
+  height: 91px;
   background-color: #f4f7f6;
   border: none;
   font-size: 13px;
@@ -890,26 +890,15 @@ button, input, select, textarea {
   background-color: #323232;
 }
 
-
-
 /* Медиа-запросы для планшетной версии (max-width: 1659px) */
 @media (max-width: 1659px) {
-  body {
-    max-width: 100%;
-  }
-
   .header {
     min-height: 392px;
-    position: relative;
     margin-bottom: 43px;
     justify-content: space-between;
     background-color: rgb(50, 52, 52);
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./sources/img/banner-bg-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
     z-index: 0;
-    color: white;
   }
 
   .header-logo {
@@ -920,13 +909,7 @@ button, input, select, textarea {
   }
 
   .header-menu {
-    position: absolute;
-    top: 40px;
     right: 33px;
-  }
-
-  .menu-toggle {
-    display: none;
   }
 
   /* Стили иконки гамбургера */
@@ -1000,17 +983,10 @@ button, input, select, textarea {
   }
 
   .header-title {
-    display: block;
     width: 81%;
-    position: relative;
     top: 54px;
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center;
-    font-weight: 700;
     font-size: 40px;
     line-height: 1.4;
-    text-transform: uppercase;
   }
 
   /* Тренды */
@@ -1020,7 +996,7 @@ button, input, select, textarea {
 
   .trend-title::after {
     background: rgba(181, 159, 91, 0.45);
-    margin: 9px auto 19px auto;
+    margin-bottom: 19px;
   }
 
   .trend-articles {
@@ -1035,7 +1011,6 @@ button, input, select, textarea {
   .trend-text {
     bottom: 13px;
     left: 19px;
-    right: 20px;
     padding: 29px;
     border: 3px solid rgba(181, 159, 91, 0.6);
   }
@@ -1054,7 +1029,6 @@ button, input, select, textarea {
 
   .posts {
     width: 57%;
-    padding: 0;
     flex-shrink: 0;
     padding-bottom: 33px;
     gap: 3px;
@@ -1095,7 +1069,6 @@ button, input, select, textarea {
  /* боковая панель */
   .sidebar {
     width: 39.5%;
-    gap: 60px;
   }
 
   .sidebar-title {
@@ -1116,7 +1089,7 @@ button, input, select, textarea {
 
   .shop-title::after {
     background: rgba(181, 159, 91, 0.45);
-    margin: 8px auto 28px auto;
+    margin-top: 8px;
   }
 
   .shop-articles {
@@ -1166,9 +1139,10 @@ button, input, select, textarea {
     margin-bottom: 22px;
   }
 
+  /* футер */
   .footer {
     width: 90%;
-    margin: 5px auto;
+    margin-top: 5px;
   }
 
   .socials {
@@ -1176,8 +1150,6 @@ button, input, select, textarea {
   }
 
   .popup-content {
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
   }
 
@@ -1188,7 +1160,6 @@ button, input, select, textarea {
 
 .popup__close:before,
 .popup__close:after {
-  border-radius: 5px;
   width: 2.2em;
   height: 0.3em;
 }
@@ -1211,10 +1182,6 @@ button, input, select, textarea {
 
   .radio-group:nth-of-type(n+2) {
     margin-left: 22px;
-  }
-
-  .fb_textarea {
-    height: 181px;
   }
 
 }
