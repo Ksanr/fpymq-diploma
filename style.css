@@ -23,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  z-index: 0;
 }
 
 a {
@@ -69,6 +70,7 @@ button, input, select, textarea {
   position: absolute;
   top: 40px;
   right: 244px;
+  z-index: 9;
 }
 
 .menu-toggle {
@@ -78,6 +80,7 @@ button, input, select, textarea {
 .header-menu-list {
   display: flex;
   gap: 34.5px;
+  z-index: 9;
 }
 
 .header-menu-item a,
@@ -106,7 +109,7 @@ button, input, select, textarea {
   font-weight: 700;
   font-size: 45px;
   line-height: 1.66;
-
+  z-index: 0;
 }
 
 /* Тренды */
@@ -133,6 +136,7 @@ button, input, select, textarea {
 .trend-articles {
   display: flex;
   gap: 4px;
+
 }
 
 .trend-article {
@@ -1149,6 +1153,7 @@ button, input, select, textarea {
     margin-bottom: 46px;
   }
 
+  /* попап-окно */
   .popup-content {
     transform: translate(-50%, -50%) scale(0.8);
   }
@@ -1158,11 +1163,11 @@ button, input, select, textarea {
     right: 1px;
   }
 
-.popup__close:before,
-.popup__close:after {
-  width: 2.2em;
-  height: 0.3em;
-}
+  .popup__close:before,
+  .popup__close:after {
+    width: 2.2em;
+    height: 0.3em;
+  }
 
   .popup-title {
     font-size: 18px;
@@ -1184,4 +1189,248 @@ button, input, select, textarea {
     margin-left: 22px;
   }
 
+}
+
+/* Медиа-запросы для мобильно версии (max-width: 499px) */
+@media (max-width: 499px) {
+  .header {
+    min-height: 639px;
+    margin-bottom: 38px;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./sources/img/banner-mobile.jpg");
+    text-align: center;
+  }
+
+  .header-logo {
+    width: 269px;
+    padding-top: 225px;
+    padding-left: 0;
+    margin: 0 auto;
+
+  }
+
+  .header-menu {
+    position: fixed;
+    right: 8.2%;
+    top: 2.2%;
+  }
+
+  /* Стили иконки гамбургера */
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .menu-btn span {
+    top: 21px;
+  }
+
+  .menu-btn span::before {
+    top: -8px;
+    right: 0;
+  }
+
+  .menu-btn span::after {
+    top: 8px;
+    right: 0;
+  }
+
+/* Скрываем список меню по умолчанию ранее, здесь адаптация под моб.версию*/
+  .header-menu-list {
+    top: 200%;
+    right: -50%;
+    flex-direction: column;
+    width: 300%;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .header-title {
+    width: 81%;
+    top: 12px;
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  /* Тренды */
+  .trend-title {
+    font-size: 16px;
+  }
+
+  .trend-title::after {
+    background: rgba(181, 159, 91, 0.4);
+    margin-bottom: 24px;
+  }
+
+  .trend-article {
+    width: 100%;
+    height: 230px;
+  }
+
+  .trend-text {
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    padding: 24px 20px 28px;
+  }
+
+  .trend-art-title {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  /* Основной контент */
+  .container {
+    width: 99%;
+    padding: 44px 4% 0;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .posts {
+    width: 91.67%;
+    padding-bottom: 0px;
+    gap: 6px;
+  }
+
+  .posts > :nth-child(n+2)::before {
+    margin: 0px auto 21px auto;
+  }
+
+  .posts > *:last-child::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgba(181, 159, 91, 0.45);
+    margin: 0px auto;
+}
+
+  .post-category {
+    bottom: 6px;
+  }
+
+  .post-title {
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    right: 3px;
+    top: 2px;
+    margin-bottom: 0px;
+  }
+
+  .post-data-author {
+    margin: 20px 0 13px;
+    right: 3px;
+  }
+
+  .post-text {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+ /* боковая панель */
+  .sidebar {
+    width: 93%;
+    gap: 40px;
+  }
+
+
+  .sidebar-posts {
+    padding-top: 6px;
+    padding-bottom: 22px;
+  }
+
+  .sidebar-title {
+    left: -1px;
+    font-size: 16px;
+    bottom: 0px;
+    margin: 0 auto 23px;
+  }
+
+  .subscribe {
+    gap: 1px;
+  }
+
+  .list-tags {
+    gap: 5px;
+    padding-bottom: 4px;
+  }
+
+  .list-themes {
+    bottom: 13px;
+  }
+
+  .theme {
+    width: 100%;
+  }
+ /* магазин */
+  .shop {
+    width: 99%;
+    padding: 14px 0 0;
+  }
+
+  .shop-title {
+    font-size: 16px;
+  }
+
+  .shop-title::after {
+    margin-top: 11px;
+  }
+
+  .shop-articles {
+    width: 86%;
+    margin: 0px 10.69%;
+    gap: 0px;
+    flex-direction:column;
+  }
+
+  .shop-article {
+    width: 78.6%;
+    position: relative;
+  }
+
+  .shop-img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+
+  .shop-text-block {
+    position: relative;
+    width: 118%;
+    bottom: 37px;
+    right: 24px;
+  }
+
+  .shop-text {
+    margin-bottom: 22px;
+  }
+
+  /* всплывающее окно */
+  .popup-content {
+    padding: 9px 25px 21px 22px;
+    max-width: 91%;
+    width: 91%;
+  }
+
+  .popup__close {
+    top: -32px;
+    right: 2px;
+  }
+
+  .popup-title {
+    font-size: 16px;
+    left: -2px;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
 }
