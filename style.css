@@ -1191,8 +1191,8 @@ button, input, select, textarea {
 
 }
 
-/* Медиа-запросы для мобильно версии (max-width: 509px) */
-@media (max-width: 509px) {
+/* Медиа-запросы для мобильно версии (max-width: 519px) */
+@media (max-width: 519px) {
   .header {
     min-height: 639px;
     margin-bottom: 38px;
