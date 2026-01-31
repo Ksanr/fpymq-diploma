@@ -894,8 +894,8 @@ button, input, select, textarea {
   background-color: #323232;
 }
 
-/* Медиа-запросы для планшетной версии (max-width: 1659px) */
-@media (max-width: 1659px) {
+/* Медиа-запросы для планшетной версии (max-width: 1199px) */
+@media (max-width: 1199px) {
   .header {
     min-height: 392px;
     margin-bottom: 43px;
@@ -1191,8 +1191,8 @@ button, input, select, textarea {
 
 }
 
-/* Медиа-запросы для мобильно версии (max-width: 519px) */
-@media (max-width: 519px) {
+/* Медиа-запросы для мобильно версии (max-width: 767px) */
+@media (max-width: 767px) {
   .header {
     min-height: 639px;
     margin-bottom: 38px;
