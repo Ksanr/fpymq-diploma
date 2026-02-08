@@ -1286,16 +1286,16 @@ button, input, select, textarea {
 
   /* Основной контент */
   .container {
-    width: 99%;
-    padding: 44px 4% 0;
+    width: 96%;
+    padding: 44px 0% 0 4%;
     flex-direction: column;
-    gap: 32px;
+    gap: 28px;
   }
 
   .posts {
-    width: 91.67%;
+    width: 95%;
     padding-bottom: 0px;
-    gap: 6px;
+    gap: 3px;
   }
 
   .posts > :nth-child(n+2)::before {
@@ -1351,7 +1351,7 @@ button, input, select, textarea {
     left: -1px;
     font-size: 16px;
     bottom: 0px;
-    margin: 0 auto 23px;
+    margin: 0 auto 28px;
   }
 
   .subscribe {
@@ -1359,8 +1359,12 @@ button, input, select, textarea {
   }
 
   .list-tags {
-    gap: 5px;
+    gap: 3px;
     padding-bottom: 4px;
+  }
+
+  .tag {
+    padding: 3px 13px 3px 12px;
   }
 
   .list-themes {
@@ -1373,11 +1377,12 @@ button, input, select, textarea {
  /* магазин */
   .shop {
     width: 100%;
-    padding: 12px 0 0;
+    padding: 3px 0 0;
   }
 
   .shop-title {
     font-size: 16px;
+    padding-right: 1%;
   }
 
   .shop-title::after {
@@ -1385,27 +1390,27 @@ button, input, select, textarea {
   }
 
   .shop-articles {
-    width: 100%;
+    width: 80%;
     margin: 0 10%;
     gap: 0px;
     flex-direction: column;
   }
 
   .shop-article {
-    width: 67.5%;
+    width: 82%;
     position: relative;
   }
 
   .shop-img {
-    width: 100%;
+    width: 120%;
     height: auto;
     left: 0;
   }
 
   .shop-img img {
-    width: 116%;
+    width: 100%;
     height: auto;
-    //display: block;
+    display: block;
   }
 
   .shop-text-block {
