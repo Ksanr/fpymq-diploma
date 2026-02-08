@@ -1372,8 +1372,8 @@ button, input, select, textarea {
   }
  /* магазин */
   .shop {
-    width: 99%;
-    padding: 14px 0 0;
+    width: 100%;
+    padding: 12px 0 0;
   }
 
   .shop-title {
@@ -1385,14 +1385,14 @@ button, input, select, textarea {
   }
 
   .shop-articles {
-    width: 86%;
-    margin: 0px 10.69%;
+    width: 100%;
+    margin: 0 10%;
     gap: 0px;
-    flex-direction:column;
+    flex-direction: column;
   }
 
   .shop-article {
-    width: 78.6%;
+    width: 67.5%;
     position: relative;
   }
 
